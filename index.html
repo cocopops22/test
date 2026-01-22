@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Syahmi’s 23rd Birthday 💙</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Parisienne&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f7f9ff;
+      --card:rgba(255,255,255,.78);
+      --border:rgba(0,0,0,.08);
+      --blue:#1d4ed8;
+      --text:#111827;
+      --muted:#6b7280;
+      --shadow:0 14px 34px rgba(0,0,0,.08);
+      --radius:22px;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:34px;
+      background:
+        radial-gradient(900px 520px at 18% 12%, rgba(29,78,216,.10), transparent 62%),
+        radial-gradient(820px 480px at 86% 20%, rgba(29,78,216,.08), transparent 60%),
+        var(--bg);
+    }
+
+    .wrap{ width:min(1020px, 100%); }
+
+    header{
+      text-align:center;
+      margin-bottom:22px;
+    }
+
+    h1{
+      margin:0;
+      font-family:"Parisienne", cursive;
+      font-size:clamp(44px, 6vw, 78px);
+      font-weight:400;
+      color:var(--blue);
+      text-shadow:0 10px 24px rgba(29,78,216,.12);
+    }
+
+    .subtitle{
+      margin-top:10px;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .panel{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px;
+      backdrop-filter:blur(12px);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+
+    @media (min-width:720px){
+      .grid{ grid-template-columns:repeat(6,1fr); }
+    }
+
+    a.icon-link{
+      text-decoration:none;
+    }
+
+    .icon-btn{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.85);
+      border-radius:18px;
+      padding:16px 10px;
+      cursor:pointer;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
+      box-shadow:0 10px 20px rgba(0,0,0,.05);
+      transition:.15s ease;
+      color:inherit;
+    }
+
+    .icon-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 34px rgba(0,0,0,.08);
+    }
+
+    .icon{
+      width:46px;
+      height:46px;
+      border-radius:16px;
+      display:grid;
+      place-items:center;
+      font-size:22px;
+      background:rgba(29,78,216,.10);
+    }
+
+    .label{
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    footer{
+      margin-top:16px;
+      text-align:center;
+      font-size:12px;
+      color:var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Syahmi’s 23rd Birthday</h1>
+      <p class="subtitle">tap an icon 🤍</p>
+    </header>
+
+    <section class="panel">
+      <div class="grid">
+        <!-- ICON 1 → NEW PAGE -->
+        <a href="icon1.html" class="icon-link">
+          <div class="icon-btn">
+            <div class="icon">🤍</div>
+            <div class="label">things you do</div>
+          </div>
+        </a>
+
+        <!-- Others (inactive for now) -->
+        <div class="icon-btn"><div class="icon">😌</div><div class="label">you, to me</div></div>
+        <div class="icon-btn"><div class="icon">🕰️</div><div class="label">us so far</div></div>
+        <div class="icon-btn"><div class="icon">📸</div><div class="label">saved moments</div></div>
+        <div class="icon-btn"><div class="icon">🎧</div><div class="label">when you miss me</div></div>
+        <div class="icon-btn"><div class="icon">🎂</div><div class="label">happy 23rd</div></div>
+      </div>
+    </section>
+
+    <footer>made with love 💙</footer>
+  </div>
+</body>
+</html>
